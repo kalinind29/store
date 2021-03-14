@@ -1,0 +1,106 @@
+.arrivals
+    height: 148px
+    background: #F8F3F4
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    &_heading
+        font-size: 24px
+        line-height: 29px
+        color: $selectColor
+
+    &_nav
+        display: flex
+        list-style-type: none
+
+    &_link
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 17px
+        color: #636363
+        &:hover
+            color: $selectColor
+
+    &_list
+        &:not(:last-child)::after
+            content: '/'
+            margin-left: 8px
+            margin-right: 8px
+        &:last-child a
+            font-weight: bold
+            color: $selectColor
+
+.filters
+    padding-top: 51px
+    display: flex
+
+.filter_left
+    display: flex
+
+.filter__left_text
+    font-weight: 600
+    font-size: 14px
+    line-height: 17px
+    color: #000000
+    margin-right: 11px
+
+.filter_left_link
+    display: flex
+
+    &:hover .filter__left_text
+        color: #EF5B70
+
+.filter_button
+    margin-top: 3px
+
+    .filter_left_link:hover &
+        fill: #EF5B70
+
+.filter_right
+    display: flex
+    margin-left: 310px
+
+.filter__right_text
+    font-style: normal
+    font-weight: normal
+    margin-right: 28px
+    font-size: 15px
+    line-height: 20px
+    color: #6F6E6E
+
+.filter_right_link
+    display: flex
+    margin-right: 28px
+
+.arrow_button
+    margin-top: 8px
+    margin-right: 10px
+
+.pagination
+    border: 1px solid #EBEBEB
+    margin: 0px auto 96px auto
+    list-style-type: none
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 283px
+    height: 43px
+
+.page__arrow_left
+    margin-left: 16px
+
+.page__arrow_right
+    margin-right: 16px
+
+.page_link
+    padding: 0 5px 0 5px
+    box-sizing: border-box
+    font-weight: 300
+    font-size: 18px
+    line-height: 19px
+    color: #6E6C6C
+    opacity: 0.65
+    &:hover
+        color: $selectColor
