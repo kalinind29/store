@@ -10,6 +10,13 @@ body
 a
     text-decoration: none
 
+summary
+    display: block
+    outline: none
+
+    summary::-webkit-details-marker
+        display: none
+
 .container
     max-width: 1140px
     margin: 0 auto
@@ -30,6 +37,8 @@ a
 
     &__icons:not(:last-child)
         margin-right: 33px
+    &__icons:hover path
+        fill: $selectColor
 
 .promo
     background: #F1E4E6
@@ -160,6 +169,8 @@ a
         font-size: 13px
         line-height: 16px
         color: #000000
+        &:hover
+            color: $selectColor
 
     &__text
         font-weight: 300
@@ -342,8 +353,9 @@ a
     border: hidden
     color: #222224
     opacity: 0.67
-    padding-left: 8px
+    padding: 22px 15px
     border-radius: 16px 0px 0px 16px
+    outline: none
 
 .submit
     background: #F16D7F
@@ -375,6 +387,17 @@ a
 .social_link_hover:hover .white
     fill: #FFFFFF
 
+.sort
+    display: flex
+    &_summary
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 17px
+        color: #6F6E6E
+
 @import catalog
 
-@import mixins
+@import product
+
+@import cart

@@ -32,51 +32,71 @@
             font-weight: bold
             color: $selectColor
 
-.filters
+.filter-sort
     padding-top: 51px
+    padding-bottom: 16px
     display: flex
 
-.filter_left
-    display: flex
+.filter
+    margin-right: 30px
+    position: relative
+    width: 360px
+    &_summary
+        font-weight: 600
+        font-size: 14px
+        line-height: 17px
+        color: #000000
+        padding-right: 11px
 
-.filter__left_text
-    font-weight: 600
-    font-size: 14px
-    line-height: 17px
-    color: #000000
-    margin-right: 11px
+    &_details
+        padding: 13px 16px 16px
+        box-sizing: border-box
+        position: absolute
+        z-index: 1
+        width: 100%
+        &[open]
+            background: #FFFFFF
+            box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+            & .filter_summary
+                color: $selectColor
+            & path
+                fill: $selectColor
 
-.filter_left_link
-    display: flex
+    &_details_in
+        margin-top: 16px
+        &[open] .filter_heading_in
+            color: $selectColor
 
-    &:hover .filter__left_text
-        color: #EF5B70
+    &_summary_in
+        border-left: 5px solid $selectColor
 
-.filter_button
-    margin-top: 3px
+    &_heading_in
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 17px
+        color: $selectColor
+        display: block
+        color: #6F6E6E
+        padding: 8px 0 11px 11px
+        border-bottom: 1px solid #EBEBEB
 
-    .filter_left_link:hover &
-        fill: #EF5B70
+    &_ul
+        list-style-type: none
+        padding-left: 17px
+        padding-top: 24px
+        & a
+            font-size: 14px
+            line-height: 17px
+            color: #6F6E6E
 
-.filter_right
-    display: flex
-    margin-left: 310px
+.sort
+    position: relative
+    &_summary
+        margin-right: 28px
 
-.filter__right_text
-    font-style: normal
-    font-weight: normal
-    margin-right: 28px
-    font-size: 15px
-    line-height: 20px
-    color: #6F6E6E
-
-.filter_right_link
-    display: flex
-    margin-right: 28px
-
-.arrow_button
-    margin-top: 8px
-    margin-right: 10px
+    &_ul
+        list-style-type: none
 
 .pagination
     border: 1px solid #EBEBEB
