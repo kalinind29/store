@@ -9,14 +9,15 @@
 
     &_box
         width: 652px
-        height: 303px
+        height: 306px
         display: flex
         margin-bottom: 40px
         background: #FFFFFF
         box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
 
     &_pic
-        width: 260px
+        width: 263px
+        height: 306px
 
     &_pic_size
         width: 100%
@@ -24,6 +25,7 @@
     &_shopping
         display: flex
         justify-content: space-between
+        margin-top: 75px
 
     &_shopping_button
         padding: 16px 40px
@@ -32,12 +34,15 @@
         color: #000000
         border: 1px solid #A4A4A4
         &:hover
-            background: #F16D7F
+            background: $selectColor
             border: 1px solid #FF6A6A
             color: #FFFFFF
 
 .order
+    width: 262px
+    height: 222px
     padding-left: 32px
+    padding-right: 57px
     &_info
         font-size: 22px
         line-height: 26px
@@ -63,13 +68,24 @@
         height: 24px
         margin-left: 24px
         text-align: center
+        font-style: normal
+        font-weight: normal
+        font-size: 18px
+        line-height: 22px
+        color: #656565
 
     &_price_bucks
         color: $selectColor
 
+.close_button
+    margin-top: 28px
+    margin-right: 22px
+
 .shipping_input
     display: flex
     flex-direction: column
+    margin-top: 17px
+    margin-bottom: 17px
 
 .shipping_heading
     font-style: normal
@@ -82,6 +98,7 @@
     border: 1px solid #A4A4A4
     width: 360px
     height: 45px
+    box-sizing: border-box
     margin-top: 20px
     font-family: Lato
     font-style: normal
@@ -92,66 +109,72 @@
     padding-left: 16px
 
 .shipping_quote
-    margin-top: 20px
+    margin-top: 24px
     border: 1px solid #A4A4A4
     width: 100px
     height: 34px
-    font-family: Lato
+    box-sizing: border-box
+    padding-top: 10px
     font-style: normal
-    font-weight: 300
     font-size: 11px
     line-height: 13px
     color: #4A4A4A
     text-align: center
+    &:hover
+        background: $selectColor
+        color: #FFFFFF
 
 .total
-    width: 360px
-    height: 215px
     background: #F5F3F3
-    margin-top: 57px
+    width: 360px
+    height: 214px
+    margin-top: 58px
+
+.sub__price
+    font-style: normal
+    font-weight: normal
+    font-size: 11px
+    line-height: 13px
+    color: #4A4A4A
     text-align: right
-    &_price
-        font-family: Lato
-        font-style: normal
-        font-weight: normal
-        font-size: 11px
-        line-height: 13px
-        color: #4A4A4A
-        padding-top: 40px
-        padding-right: 34px
-    &_price_bucks
+    padding-top: 40px
+    padding-right: 34px
+    &_bucks
         padding-left: 16px
 
-.grand_price
-    font-family: Lato
+.grand__price
+    padding-top: 12px
     font-style: normal
     font-weight: 300
     font-size: 16px
     line-height: 19px
     color: #222222
-    padding-top: 12px
-    padding-right: 34px
+    text-align: right
+    padding-right: 37px
     margin-bottom: 21px
     &_bucks
-        padding-left: 20px
-        font-weight: 700
+        padding-left: 16px
         color: $selectColor
 
-.line_buying
+.line__total
     background: #E2E2E2
-    width: 275px
+    width: 273px
+    height: 1px
     margin: 0 auto
     margin-bottom: 17px
 
-.checkout
+.checkout_button
     margin-top: 17px
-    font-family: Lato
+    background: #F16D7F
     font-style: normal
     font-weight: 300
     font-size: 16px
-    line-height: 19px
-    color: #FFFFFF
+    margin: 0 auto
     display: block
-    padding: 17px 43px 42px 43px
     text-align: center
-    background: #F16D7F
+    line-height: 19px
+    padding-top: 16px
+    box-sizing: border-box
+    color: #FFFFFF
+    width: 273px
+    height: 50px
