@@ -64,6 +64,7 @@
 
     &_numbers
         border: 1px solid #EAEAEA
+        outline: none
         width: 43px
         height: 24px
         margin-left: 24px
@@ -73,6 +74,12 @@
         font-size: 18px
         line-height: 22px
         color: #656565
+        &:focus
+            border: 1px solid #7bc1f7
+            box-shadow: 0px 0px 5px #7bc1f7
+        &::-webkit-outer-spin-button
+        &::-webkit-inner-spin-button
+            display: none
 
     &_price_bucks
         color: $selectColor
@@ -107,6 +114,10 @@
     line-height: 16px
     color: #B1B1B1
     padding-left: 16px
+    &:focus
+        outline: none
+        border: 1px solid #7bc1f7
+        box-shadow: 0px 0px 5px #7bc1f7
 
 .shipping_quote
     margin-top: 24px
