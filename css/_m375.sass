@@ -1,0 +1,66 @@
+@media (max-width: 767px)
+    .center
+        padding-left: calc(50% - 212px)
+        padding-right: calc(50% - 212px)
+
+    .header
+        &__icons
+            &:not(:last-child)
+                margin-right: 8px
+            &_desc
+                display: none
+            &_mob
+                display: block
+    .nav
+        width: 100%
+        top: 0
+        height: 100vh
+
+        &__links-menu
+            display: flex
+            justify-content: center
+
+    #switcher:checked ~ .nav
+        right: -100%
+
+    .promo
+        height: 363px
+        display: flex
+        justify-content: center
+        &__text
+            display: flex
+            align-items: center
+            justify-content: center
+            padding-top: 0
+        &__img
+            display: none
+
+    .sale
+        padding-bottom: 64px
+        &__top
+            flex-direction: column
+            row-gap: 32px
+        &__item
+            height: 247px
+        &__bottom
+            height: 111px
+            margin-top: 32px
+
+    .goods
+        padding-left: 14px
+        padding-right: 14px
+
+    .footer
+        height: 143px
+        display: flex
+        flex-direction: column-reverse
+        align-items: center
+        &__left
+            padding-bottom: 9px
+        &__right
+            padding-top: 43px
+
+@media ( max-width: 425px )
+    .center
+        padding-left: 8px
+        padding-right: 8px
