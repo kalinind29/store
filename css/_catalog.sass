@@ -104,6 +104,8 @@
 
     &__summary
         margin-right: 28px
+        &[open]
+            color: $selectColor
 
     &__summary::after
         content: url(../img/cat_arrow_down.svg)
@@ -148,9 +150,13 @@
 
 .page__arrow_left
     margin-left: 16px
+    &:hover path
+        fill: $selectColor
 
 .page__arrow_right
     margin-right: 16px
+    &:hover path
+        fill: $selectColor
 
 .page_link
     padding: 0 5px 0 5px

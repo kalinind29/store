@@ -40,6 +40,64 @@ summary
     &__icons:hover path
         fill: $selectColor
 
+.close__menu
+    padding-left: 92%
+
+.nav
+    background: #FFFFFF
+    padding: 16px 16px 32px 32px
+    position: absolute
+    top: 75px
+    right: 0
+    width: $widthNav
+    box-sizing: border-box
+    transition: right .6s
+
+    &__heading
+        font-style: normal
+        font-weight: bold
+        font-size: 14px
+        line-height: 17px
+        color: #000000
+        padding-top: 8px
+        padding-bottom: 24px
+
+    &__items
+        list-style-type: none
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 17px
+        color: #6F6E6E
+        padding-top: 12px
+        a
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 17px
+            color: #6F6E6E
+            padding-left: 20px
+            line-height: 24px
+        &_section
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 17px
+            color: $selectColor
+
+.items_nodecor
+    list-style-type: none
+    padding-bottom: 20px
+
+#switcher
+    display: none
+
+    &:checked ~ .nav
+        right: -$widthNav
+        width: 0
+        visibility: hidden
+        display: none
+
 .promo
     background: #F1E4E6
     display: flex
@@ -79,8 +137,8 @@ summary
         padding-left: 16px
 
 .sale
-    padding-top: 64px
-    padding-bottom: 96px
+    margin-top: 64px
+    margin-bottom: 96px
 
     &__item
         height: 260px
@@ -90,6 +148,7 @@ summary
         flex-direction: column
         align-items: center
         justify-content: center
+        background-size: cover
 
     &__item_1
         background-image: url(../img/sale_1.jpg)
@@ -100,14 +159,20 @@ summary
     &__item_3
         background-image: url(../img/sale_3.jpg)
 
-    &__item_4
-        background-image: url(../img/sale_4.jpg)
-        height: 180px
-        margin-top: 30px
-
     &__top
         display: flex
         gap: 30px
+
+    &__bottom
+        background-image: url(../img/sale_4.jpg)
+        height: 180px
+        background-position: center
+        margin-top: 30px
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        background-size: cover
 
     &__text
         font-style: normal
@@ -118,9 +183,12 @@ summary
         color: #FFFFFF
 
     &__heading
+        font-style: normal
+        font-weight: bold
         font-size: 24px
         line-height: 29px
         text-align: center
+
         color: $selectColor
 
 .items
@@ -140,8 +208,8 @@ summary
         text-align: center
 
 .product-box
-    padding-top: 48px
-    padding-bottom: 48px
+    margin-top: 48px
+    margin-bottom: 48px
     display: flex
     flex-wrap: wrap
     justify-content: center
@@ -236,9 +304,17 @@ summary
         justify-content: space-between
         flex-grow: 1
 
-    &_img
-        margin-top: 103px
-        text-align: center
+.delivery_img
+    padding-top: 103px
+    text-align: center
+
+.sales_img
+    padding-top: 103px
+    text-align: center
+
+.quality_img
+    padding-top: 103px
+    text-align: center
 
 .h3_delivery
     font-style: normal
@@ -404,3 +480,5 @@ summary
 @import cart
 
 @import registration
+
+@import m768
