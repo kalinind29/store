@@ -1369,7 +1369,9 @@ summary summary::-webkit-details-marker {
 }
 
 .reg_box {
-  width: 344px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 360px;
   height: 44px;
   gap: 21px;
   font-style: normal;
@@ -1800,6 +1802,12 @@ summary summary::-webkit-details-marker {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .reg__input {
+    width: 100%;
+  }
+  .reg_box {
+    width: 100%;
   }
   .arrivals {
     -webkit-box-pack: center;
