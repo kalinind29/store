@@ -1352,12 +1352,12 @@ summary summary::-webkit-details-marker {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 96px;
 }
 
 .reg__input {
   width: 360px;
   margin-top: 64px;
-  margin-bottom: 96px;
 }
 
 .reg_heading {
@@ -1483,7 +1483,7 @@ summary summary::-webkit-details-marker {
 }
 
 .indent {
-  padding-left: 23px;
+  padding-left: 22px;
 }
 
 @media (max-width: 1023px) {
@@ -1549,6 +1549,7 @@ summary summary::-webkit-details-marker {
     height: 134px;
   }
   .subscription {
+    background-position-x: -364px;
     height: 693px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1557,6 +1558,7 @@ summary summary::-webkit-details-marker {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding-bottom: 64px;
   }
   .subscription_quote {
     width: 360px;
@@ -1568,6 +1570,62 @@ summary summary::-webkit-details-marker {
   }
   .subscribe_form {
     margin-bottom: 140px;
+  }
+  .carts {
+    width: 730px;
+  }
+  .cart {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .cart_box {
+    width: 100%;
+  }
+  .cart_shopping {
+    width: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-bottom: 64px;
+  }
+  .order {
+    width: 336px;
+  }
+  .shopping_right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .shipping_input {
+    margin-right: 16px;
+  }
+  .total {
+    margin-top: 55px;
+  }
+  .reg__loalty_heading {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+  }
+  .reg__loalty {
+    width: 354px;
+    height: 337px;
+  }
+  .reg__loalty_text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+  }
+  .reg__list_text {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
   }
 }
 
@@ -1626,7 +1684,7 @@ summary summary::-webkit-details-marker {
     display: none;
   }
   .sale {
-    padding-bottom: 64px;
+    margin-bottom: 64px;
   }
   .sale__top {
     -webkit-box-orient: vertical;
@@ -1636,7 +1694,7 @@ summary summary::-webkit-details-marker {
     row-gap: 32px;
   }
   .sale__item {
-    height: 247px;
+    height: 248px;
   }
   .sale__bottom {
     height: 111px;
@@ -1645,6 +1703,108 @@ summary summary::-webkit-details-marker {
   .goods {
     padding-left: 14px;
     padding-right: 14px;
+  }
+  .subscribe_form {
+    width: 341px;
+  }
+  .cart {
+    margin-top: 40px;
+  }
+  .cart_box {
+    height: 188px;
+    width: 100%;
+  }
+  .cart_pic {
+    width: 143px;
+    height: 188px;
+  }
+  .cart_pic_size {
+    width: 143px;
+    height: 188px;
+  }
+  .carts {
+    width: 100%;
+  }
+  .order {
+    width: 262px;
+    height: 222px;
+    padding-left: 16px;
+    padding-right: 30px;
+  }
+  .order_title {
+    padding-top: 14px;
+    width: 143px;
+    height: 36px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+  }
+  .order_info {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #575757;
+  }
+  .order_price {
+    padding-top: 26px;
+  }
+  .order_numbers {
+    margin-left: 16px;
+    width: 23px;
+    height: 14px;
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .shopping_right {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .shipping_box {
+    width: 100%;
+  }
+  .cart_shopping {
+    margin-top: 30px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .cart_shopping_button {
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #575757;
+    padding: 9px 8px 10px 9px;
+    width: 174px;
+    height: 33px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .close_button {
+    width: 9px;
+    height: 11px;
+    margin-top: 17px;
+    margin-right: 12px;
+  }
+  .total {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .reg {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .arrivals {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .footer {
     height: 143px;
