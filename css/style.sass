@@ -49,9 +49,13 @@ summary
     position: absolute
     top: 75px
     right: 0
+    z-index: 2
     width: $widthNav
     box-sizing: border-box
     transition: right .6s
+
+    &__links-menu
+        display: none
 
     &__heading
         font-style: normal
@@ -192,7 +196,7 @@ summary
         color: $selectColor
 
 .items
-    padding-bottom: 96px
+    padding-bottom: 48px
 
     &__heading
         margin-bottom: 6px

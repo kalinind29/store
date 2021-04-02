@@ -33,15 +33,15 @@
             color: $selectColor
 
 .filter-sort
-    padding-top: 51px
-    padding-bottom: 16px
+    margin-top: 51px
+    margin-bottom: 16px
     display: flex
 
 .filter
     margin-right: 30px
     position: relative
     width: 360px
-    top: -15px
+    top: -12px
     &_summary
         font-weight: 600
         font-size: 14px
@@ -54,8 +54,8 @@
         box-sizing: border-box
         position: absolute
         z-index: 1
-        width: 100%
         &[open]
+            width: 360px
             background: #FFFFFF
             box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
             & .filter_summary
@@ -168,3 +168,71 @@
     opacity: 0.65
     &:hover
         color: $selectColor
+
+.goods
+    height: 341px
+    background: #222224
+
+    &_top
+        display: flex
+        justify-content: space-between
+        flex-grow: 1
+
+.delivery_img
+    padding-top: 103px
+    text-align: center
+
+.sales_img
+    padding-top: 103px
+    text-align: center
+
+.quality_img
+    padding-top: 103px
+    text-align: center
+
+.h3_delivery
+    font-style: normal
+    font-weight: normal
+    font-size: 20px
+    line-height: 24px
+    color: #FBFBFB
+    text-align: center
+    margin-top: 28px
+
+.h3_sales
+    font-style: normal
+    font-weight: normal
+    font-size: 20px
+    line-height: 24px
+    color: #FBFBFB
+    text-align: center
+    margin-top: 19px
+
+.h3_quality
+    font-style: normal
+    font-weight: normal
+    font-size: 20px
+    line-height: 24px
+    color: #FBFBFB
+    text-align: center
+    margin-top: 25px
+
+.p_goods
+    font-style: normal
+    font-size: 14px
+    line-height: 17px
+    text-align: center
+    color: #FBFBFB
+    margin-top: 16px
+
+.delivery
+    width: 360px
+    height: 340px
+
+.sales
+    width: 360px
+    height: 340px
+
+.quality
+    width: 360px
+    height: 340px
